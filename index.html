@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #211C84;
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: rgba(77, 85, 204, 0.7);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .container:hover {
+            transform: scale(1.02);
+        }
+        header {
+            display: flex;
+            align-items: center;
+            background: #7A73D1;
+            color: white;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+            transition: background 0.3s;
+        }
+        header:hover {
+            background: #B5A8D5;
+        }
+        header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid black;
+            transition: all 0.5s ease-in-out;
+            margin-right: 20px;
+        }
+        header img:hover {
+            width: 150px;
+            height: 150px;
+            border-radius: 0;
+            transform: scale(1.1);
+        }
+        h1, h2 {
+            color: black;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #7A73D1;
+            border-left: 5px solid #B5A8D5;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.2s;
+            color: white;
+        }
+        .section:hover {
+            background: #B5A8D5;
+            transform: translateX(5px);
+        }
+        .about {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .about div {
+            flex: 1;
+            min-width: 50%;
+        }
+        .typing-text {
+            font-size: 1.2em;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid #B5A8D5;
+            width: 0;
+            animation: typing 3s steps(40, end) forwards, blink 0.8s infinite;
+        }
+        .typing-text1 {
+            font-size: 2.2em;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid #B5A8D5;
+            width: 0;
+            animation: typing 3s steps(40, end) forwards, blink 0.8s infinite;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+        .skills, .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .skills-container, .projects-section {
+            text-align: left;
+        }
+        .skills div, .projects div {
+            background: #d3d3d3;
+            color: black;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, background 0.3s;
+        }
+        .skills div:hover, .projects div:hover {
+            transform: scale(1.1);
+            background: #4D55CC;
+            color: black;
+        }
+        .cler{
+            background-color: #B5A8D5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class=" cler">
+            <img src="/sivavadivelu.jpg" alt="Profile Picture">
+            <div>
+                <h1 class="typing-text1">Siva Vadivelu</h1>
+                <p>Web Developer | HTML, CSS, JavaScript</p>
+            </div>
+        </header>
+        
+        <section class="section about">
+            <div>
+                <h2>About Me</h2>
+                <p class="typing-text">A passionate web developer with experience in building responsive and interactive websites.</p>
+            </div>
+        </section>
+        
+        <section class="section skills-container">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>JavaScript</div>
+                <div>PHP</div>
+                <div>C++</div>
+                <div>PYTHON</div>
+                <div>Responsive Design</div>
+                <div>Accounting</div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Experience</h2>
+            <p><strong>Web Developer</strong> </p>
+            <ul>
+                <li>NO Experience</li>
+            </ul>
+        </section>
+        
+        <section class="section projects-section">
+            <h2>Projects</h2>
+            <div class="skills">
+                <div>Portfolio Website</div>
+                <div>E-commerce Website</div>
+                <div>Blog Platform</div>
+            </div>
+        </section>
+        
+        <section class="section contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:premvedhaiyan@gmail.com" style="color: white;">sivavadivelu@gmail.com</a></p>
+            <p>Phone: <a href="https://instagram.com" target="_blank" style="color: white;">+91 7530041529</a></p>
+            <p>GitHub: <a href="https://github.com" target="_blank" style="color: white;">github.com</a></p>
+        </section>
+    </div>
+</body>
+</html>
